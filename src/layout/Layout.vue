@@ -13,10 +13,40 @@
 <script>
 import Header from './Header.vue';
 export default {
-    name:'LayoutComponent',
-    components:{
+    name: 'LayoutComponent',
+    components: {
         Header
     }
 }
 </script>
-<style></style>
+<style scoped>
+.top-menu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    min-height: 100px;
+    max-height: 100px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.main-content-page {
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background-color: azure;
+}
+
+.main-content-page__centered {
+    position: relative;
+    top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 160px;
+    width: 80%;
+    background-color: beige;
+}
+</style>
