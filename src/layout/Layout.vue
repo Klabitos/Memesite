@@ -28,7 +28,8 @@ export default {
     min-height: 100px;
     max-height: 100px;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: #E84855;
+    border-bottom: 3px solid #403F4C;
 }
 
 .main-content-page {
@@ -37,7 +38,6 @@ export default {
     top: 60px;
     width: 100vw;
     height: calc(100vh - 60px);
-    background-color: azure;
 }
 
 .main-content-page__centered {
@@ -47,6 +47,5 @@ export default {
     margin-right: auto;
     margin-bottom: 160px;
     width: 80%;
-    background-color: beige;
 }
 </style>

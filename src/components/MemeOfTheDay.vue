@@ -1,5 +1,6 @@
 <template>
     <div>
+        <h2>Meme of the Day</h2>
         <MemeCard></MemeCard>
     </div>
 </template>

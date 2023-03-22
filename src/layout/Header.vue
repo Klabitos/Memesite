@@ -11,5 +11,6 @@ export default {
 <style scoped>
     .top-menu-container{
         text-align: center;
+        color: white;
     }
 </style>
