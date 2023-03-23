@@ -1,6 +1,6 @@
 <template>
     <div class="meme-card">
-        <img class="meme-img" src="../../assets/memes/image_2.png" />
+        <img class="meme-img" src="../../assets/memes/image_1.png" />
         <div class="meme-info">
             <h2>Titulo del meme</h2>
             <span>Autor</span>
@@ -45,7 +45,7 @@ export default {
 .meme-img {
     overflow: hidden !important;
     padding: 0px;
-    max-height: 450px;
+    min-height: 450px;
     border-right: 3px solid #7D8792 !important;
 }
 
@@ -76,6 +76,7 @@ export default {
     margin-top: 10px;
 }
 .meme-category{
+    cursor: pointer;
     margin: 1px;
 }
 

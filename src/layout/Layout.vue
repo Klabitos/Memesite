@@ -42,7 +42,7 @@ export default {
 
 .main-content-page__centered {
     position: relative;
-    top: 2rem;
+    top: 1rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 160px;
