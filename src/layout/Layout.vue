@@ -25,8 +25,8 @@ export default {
     top: 0px;
     left: 0px;
     z-index: 2;
-    min-height: 100px;
-    max-height: 100px;
+    min-height: 85px;
+    max-height: 85px;
     width: 100%;
     background-color: #E84855;
     border-bottom: 3px solid #403F4C;
