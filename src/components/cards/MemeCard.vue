@@ -1,23 +1,29 @@
 <template>
-    <v-card class="meme-card">
-        <img class="meme-img" src="../../assets/memes/image_1.png" />
+    <div class="meme-card">
+        <img class="meme-img" src="../../assets/memes/image_2.png" />
         <div class="meme-info">
             <h2>Titulo del meme</h2>
             <span>Autor</span>
-            <v-card-actions class="meme-info-actions">
-                <div @click="reserve">
+            <div>
+                <v-chip class="meme-category" v-for="(item, index) in 5" :key="index">#Categoria</v-chip>
+            </div>
+            <p class="meme-description">Description...</p>
+            <div class="meme-info-actions">
+                <div >
                     <v-icon class="i">
                         mdi-thumb-up
                     </v-icon>
+                    <span> +20 </span>
                 </div>
-                <div @click="reserve">
+                <div >
                     <v-icon class="i">
                         mdi-thumb-down
                     </v-icon>
+                    <span> -10 </span>
                 </div>
-            </v-card-actions>
+            </div>
         </div>
-    </v-card>
+    </div>
 </template>
 <script>
 export default {
@@ -26,41 +32,53 @@ export default {
 </script>
 <style scoped>
 .meme-card {
+    overflow: hidden;
     display: flex;
-    background-color: #403F4C;
-    color: white;
-    border: 1px solid #E84855;
-    min-width: 600px;
+    justify-content: space-between;
+    min-width: 800px;
+    max-width: 800px;
+    border-radius: 25px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 .meme-img {
-    padding: 25px;
-    border: none !important;
+    overflow: hidden !important;
+    padding: 0px;
     max-height: 450px;
+    border-right: 3px solid #7D8792 !important;
 }
 
 .meme-info{
-    position: absolute;
+    min-width: 25%;
+    max-width: 25%;
+    position: relative;
     right: 0px;
     padding: 20px;
     margin: 10px;
     border-radius: 15px !important;
-    background-color: #e848554f;
-    border: 1px solid black;
-    max-height: 180px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .meme-info-actions{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
     display: flex;
     justify-content: space-around;
-    margin-top: 15px;
+}
+
+.meme-description{
+    margin-top: 10px;
+}
+
+.meme-category{
+    margin: 1px;
 }
 
 .i{
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 20px;
     padding: 8px;
-    color: white !important;
+    color: black;
 }
 </style>

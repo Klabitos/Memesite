@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>Meme of the Day</h2>
+        <h1>Meme of the Day</h1>
         <MemeCard></MemeCard>
     </div>
 </template>
@@ -14,5 +14,9 @@ export default {
 }
 </script>
 <style scoped>
-    
+    @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+    h1{
+        padding: 20px;
+        font-family: 'Delicious Handrawn', cursive;
+    }
 </style>
