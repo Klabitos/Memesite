@@ -4,19 +4,19 @@
         <div class="meme-info">
             <h2>Titulo del meme</h2>
             <span>Autor</span>
-            <div>
+            <div class="meme-categories">
                 <v-chip class="meme-category" v-for="(item, index) in 5" :key="index">#Categoria</v-chip>
             </div>
-            <p class="meme-description">Description...</p>
+            <p class="meme-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit, laborum quia corrupti ea nam animi, itaque veniam impedit, accusamus nemo iusto cum culpa magnam esse labore tenetur aspernatur placeat?</p>
             <div class="meme-info-actions">
-                <div >
-                    <v-icon class="i">
+                <div class="thumbs-up">
+                    <v-icon class="i green">
                         mdi-thumb-up
                     </v-icon>
                     <span> +20 </span>
                 </div>
-                <div >
-                    <v-icon class="i">
+                <div class="thumbs-down">
+                    <v-icon class="i red">
                         mdi-thumb-down
                     </v-icon>
                     <span> -10 </span>
@@ -32,6 +32,7 @@ export default {
 </script>
 <style scoped>
 .meme-card {
+    background-color: #7d879217;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -71,6 +72,9 @@ export default {
     margin-top: 10px;
 }
 
+.meme-categories{
+    margin-top: 10px;
+}
 .meme-category{
     margin: 1px;
 }
@@ -80,5 +84,25 @@ export default {
     border-radius: 20px;
     padding: 8px;
     color: black;
+}
+
+.green{
+    background-color: lightgreen;
+}
+
+.red{
+    background-color: lightcoral;
+}
+
+.thumbs-down, .thumbs-up{
+    cursor: pointer;
+}
+
+.thumbs-up:hover .green{
+    background-color: rgb(29, 172, 29);
+}
+
+.thumbs-down:hover .red{
+    background-color: rgb(224, 70, 70)
 }
 </style>
