@@ -4,18 +4,28 @@
             <Header></Header>
         </div>
         <div class="main-content-page">
+            <div class="main-content-page__lateral">
+                <LateralSection></LateralSection>
+            </div>
             <div class="main-content-page__centered">
                 <router-view />
             </div>
+        </div>
+        <div class="main-content-page__bottom">
+            <SquareMenuOptions></SquareMenuOptions>
         </div>
     </div>
 </template>
 <script>
 import Header from './Header.vue';
+import LateralSection from './LateralSection.vue';
+import SquareMenuOptions from '@/components/navigation/SquareMenuOptions.vue';
 export default {
     name: 'LayoutComponent',
     components: {
-        Header
+        Header,
+        LateralSection,
+        SquareMenuOptions
     }
 }
 </script>
@@ -40,12 +50,27 @@ export default {
     height: calc(100vh - 60px);
 }
 
+.main-content-page__lateral{
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    width: 30vw;
+    height: auto;
+}
+
 .main-content-page__centered {
-    position: relative;
+    position: absolute;
     top: 1rem;
+    left: 25vw;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 160px;
     width: 80%;
+}
+
+.main-content-page__bottom{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
 }
 </style>
