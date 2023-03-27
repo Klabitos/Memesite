@@ -43,9 +43,6 @@ export default {
 }
 
 .meme-img {
-
-    opacity: 0;
-
     overflow: hidden !important;
     padding: 0px;
     min-height: 450px;

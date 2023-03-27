@@ -52,8 +52,8 @@ export default {
 
 .main-content-page__lateral{
     position: absolute;
-    left: 0px;
-    top: 60px;
+    left: 10px;
+    top: 40px;
     width: 30vw;
     height: auto;
 }
